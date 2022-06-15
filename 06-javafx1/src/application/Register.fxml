@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="application.RegisterController" prefHeight="485.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <PasswordField fx:id="txt_password" layoutX="213.0" layoutY="117.0" prefHeight="26.0" prefWidth="175.0" promptText="Enter Password" />
+      <Label layoutX="183.0" layoutY="22.0" text="Register Form">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="80.0" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_name" layoutX="213.0" layoutY="77.0" prefHeight="26.0" prefWidth="175.0" promptText="Enter Username" />
+      <Label layoutX="119.0" layoutY="120.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="166.0" text="Birthday">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txt_dob" layoutX="213.0" layoutY="163.0" promptText="Choose Birthday" />
+      <ComboBox fx:id="cbo_city" layoutX="219.0" layoutY="203.0" prefWidth="150.0" promptText="Choose City" />
+      <Label layoutX="118.0" layoutY="216.0" text="City">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="258.0" text="Skillsets">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chk_java" layoutX="216.0" layoutY="259.0" mnemonicParsing="false" text="Java" />
+      <CheckBox fx:id="chk_css" layoutX="355.0" layoutY="259.0" mnemonicParsing="false" text="CSS" />
+      <CheckBox fx:id="chk_php" layoutX="285.0" layoutY="259.0" mnemonicParsing="false" text="Php" />
+      <Label layoutX="121.0" layoutY="294.0" text="Gender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="220.0" layoutY="295.0" mnemonicParsing="false" selected="true" text="Female">
+         <toggleGroup>
+            <ToggleGroup fx:id="rad_group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="325.0" layoutY="295.0" mnemonicParsing="false" text="Male" toggleGroup="$rad_group" />
+      <Label layoutX="123.0" layoutY="337.0" text="Other">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt_text_area" layoutX="216.0" layoutY="328.0" prefHeight="78.0" prefWidth="196.0" promptText="Other Information" />
+      <Button layoutX="201.0" layoutY="430.0" mnemonicParsing="false" onAction="#btn_register_click" style="-fx-background-color: #8A2BE2;" text="Register" textFill="#fcfcfc" />
+      <Button layoutX="291.0" layoutY="430.0" mnemonicParsing="false" onAction="#btn_login_click" style="-fx-background-color: #00008B;" text="Login" textFill="#fafafa" />
+   </children>
+</AnchorPane>
